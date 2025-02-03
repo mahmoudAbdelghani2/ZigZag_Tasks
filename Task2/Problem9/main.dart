@@ -1,31 +1,16 @@
 import 'dart:io';
 import 'dart:math';
 
-int calculateArea(int length,int width){
-  return length*width;
+int maxNumber(int x,int y,int z){
+  return z>max(x,y)?z:max(x,y);
 }
 void main(){
   String? input1=stdin.readLineSync();
   String? input2=stdin.readLineSync();
-  int length=int.parse(input1!);
-  int width=int.parse(input2!);
-  print('Area of rectangle: ${calculateArea(length, width)}');
-}
-
-/*
-* String? c=stdin.readLineSync();
-  String? input1=stdin.readLineSync();
-  String? input2=stdin.readLineSync();
+  String? input3=stdin.readLineSync();
   int num1=int.parse(input1!);
-  int num2=int.parse(input2!);*/
-
-/*
-*  import 'dart:io';
-
-*
-* String? name = stdin.readLineSync();
-*
-* String? ageInput = stdin.readLineSync();
-  int age = int.tryParse(ageInput ?? '') ?? 0;
-*
-*/
+  int num2=int.parse(input2!);
+  int num3=int.parse(input3!);
+  int maxnum=maxNumber(num1,num2,num3);
+  print("The maximum number is: $maxnum");
+}

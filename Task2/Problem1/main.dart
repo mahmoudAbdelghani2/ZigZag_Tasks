@@ -1,31 +1,12 @@
 import 'dart:io';
 import 'dart:math';
 
-int calculateArea(int length,int width){
-  return length*width;
+void printMyName(String s){
+  for(int i=0; i<100;i++){
+    print(s);
+  }
 }
 void main(){
-  String? input1=stdin.readLineSync();
-  String? input2=stdin.readLineSync();
-  int length=int.parse(input1!);
-  int width=int.parse(input2!);
-  print('Area of rectangle: ${calculateArea(length, width)}');
+  String? input=stdin.readLineSync();
+  printMyName(input!);
 }
-
-/*
-* String? c=stdin.readLineSync();
-  String? input1=stdin.readLineSync();
-  String? input2=stdin.readLineSync();
-  int num1=int.parse(input1!);
-  int num2=int.parse(input2!);*/
-
-/*
-*  import 'dart:io';
-
-*
-* String? name = stdin.readLineSync();
-*
-* String? ageInput = stdin.readLineSync();
-  int age = int.tryParse(ageInput ?? '') ?? 0;
-*
-*/

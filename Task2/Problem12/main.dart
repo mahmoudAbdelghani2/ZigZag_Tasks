@@ -12,20 +12,4 @@ void main(){
   print('Area of rectangle: ${calculateArea(length, width)}');
 }
 
-/*
-* String? c=stdin.readLineSync();
-  String? input1=stdin.readLineSync();
-  String? input2=stdin.readLineSync();
-  int num1=int.parse(input1!);
-  int num2=int.parse(input2!);*/
 
-/*
-*  import 'dart:io';
-
-*
-* String? name = stdin.readLineSync();
-*
-* String? ageInput = stdin.readLineSync();
-  int age = int.tryParse(ageInput ?? '') ?? 0;
-*
-*/
